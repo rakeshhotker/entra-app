@@ -23,7 +23,7 @@ function msalInstanceFactory(): IPublicClientApplication {
     auth: {
       clientId: '3d65ea5a-4c9d-404a-bef1-c9dfc13ac16b', // 👈 Replace this
       authority: 'https://login.microsoftonline.com/b50f048f-914d-406f-af34-ebd0524508ab', // 👈 Replace this
-      redirectUri: 'http://localhost:4200',
+      redirectUri: window.location.origin,
     },
     cache: {
       cacheLocation: 'localStorage',
